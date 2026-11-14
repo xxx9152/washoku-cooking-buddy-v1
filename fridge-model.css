@@ -1,0 +1,27 @@
+/* A single persistent 3D appliance, with doors hinged to its outside edges. */
+.landing-fridge-wrap{perspective:1500px!important;overflow:visible!important}
+.landing-fridge.fridge-model{width: min(400px,49vw)!important;aspect-ratio: .86;position:relative;transform-style:preserve-3d;perspective:none;animation:modelApproach 3.8s cubic-bezier(.2,.7,.25,1) both!important;margin:auto}
+.fridge-cabinet{position:absolute;inset:0;border:13px solid #e6a55d;border-radius:43px 43px 31px 31px;background:radial-gradient(ellipse at 50% 8%,#fff9dc,#ecd1a4 65%,#caa575);box-shadow:inset 8px 8px 18px #97633155,inset -7px -7px 15px #fff9e6,0 24px 28px #79452222;transform:translateZ(-10px)}
+.fridge-cabinet:before{content:'';position:absolute;inset:-16px;border:5px solid #fff0ce;border-radius:46px 46px 34px 34px;box-shadow:0 0 0 3px #b96726,4px 0 0 5px #e5b985;pointer-events:none}
+.fridge-lamp{position:absolute;top:3%;left:34%;width:32%;height:9px;border-radius:50%;background:#fffef2;box-shadow:0 6px 28px 18px #fff5c580}
+.fridge-shelf{position:absolute;left:0;right:0;height:10px;border-radius:5px;background:linear-gradient(#fff7e2,#e7c394);box-shadow:0 5px 7px #8b542744;transform:translateZ(2px)}
+.shelf-one{top:34%}.shelf-two{top:62%}.shelf-three{top:91%}
+.fridge-model .landing-dishes,.landing-stage.opened .fridge-model .landing-dishes{inset:9% 7% 10%!important;opacity:1!important;transform:translateZ(8px)!important;transition:none!important;animation:none!important;grid-template-rows:1fr 1fr;gap:22px 10px;pointer-events:none}
+.landing-stage.opened .fridge-model .landing-dishes{pointer-events:auto}
+.fridge-model .landing-dish,.landing-stage.opened .fridge-model .landing-dish{opacity:1!important;animation:none!important;transform:none!important}
+.model-door{position:absolute;top:0;bottom:0;width:50%;transform-style:preserve-3d;transition:transform 2.8s cubic-bezier(.35,.05,.2,1);transform:translateZ(26px) rotateY(0deg);will-change:transform}
+.model-left{left:0;transform-origin:0 50%}.model-right{right:0;transform-origin:100% 50%}
+.door-front,.door-back{position:absolute;inset:0;backface-visibility:hidden;border:4px solid #d87b2c;background:linear-gradient(110deg,#fff4d9 0%,#f0d5a7 45%,#fff4d7 78%,#dfb77d);box-shadow:inset 5px 3px 12px #fffff4,inset -6px -4px 12px #bf8c4777}
+.model-left .door-front{border-radius:42px 7px 7px 30px}.model-right .door-front{border-radius:7px 42px 30px 7px}
+.door-front:before{content:'';position:absolute;inset:10px;border:1px solid #fff9e499;border-radius:inherit;box-shadow:inset 0 12px 14px #fff9ea55}
+.door-handle{position:absolute;top:42%;width:16px;height:27%;border:2px solid #b66b27;border-radius:12px;background:linear-gradient(90deg,#ad5d1c,#ffcc7a 45%,#dc8a36 70%,#9d4b15);box-shadow:5px 4px 5px #77401e33}
+.model-left .door-handle{right:12%}.model-right .door-handle{left:12%}
+.door-back{transform:rotateY(180deg) translateZ(15px);border-radius:20px;background:linear-gradient(100deg,#f9e9c8,#e0bf8c);box-shadow:inset 5px 5px 15px #b7864266,inset -5px -5px 12px #fff9df}
+.door-back i{position:absolute;left:10%;right:10%;height:12%;border-radius:5px;background:linear-gradient(#fff3d3,#dfb982);box-shadow:0 6px 8px #79502433}.door-back i:nth-child(1){top:25%}.door-back i:nth-child(2){top:53%}.door-back i:nth-child(3){top:80%}
+.door-edge{position:absolute;top:3%;bottom:3%;width:15px;background:#d6a467;transform:rotateY(90deg);transform-origin:left}.model-left .door-edge{right:0}.model-right .door-edge{left:0}
+.landing-stage.opened .model-left{transform:translateZ(26px) rotateY(-116deg)}.landing-stage.opened .model-right{transform:translateZ(26px) rotateY(116deg)}
+.fridge-foot{position:absolute;bottom:-18px;width:26px;height:20px;background:linear-gradient(90deg,#ae6429,#eca657);border-radius:0 0 8px 8px;transform:translateZ(-5px)}.foot-left{left:10%}.foot-right{right:10%}
+@keyframes modelApproach{0%{opacity:1;transform:scale(.69) rotateY(-22deg) rotateX(3deg)}100%{opacity:1;transform:scale(1) rotateY(0) rotateX(0)}}
+@media(min-width:761px){.landing-fridge-wrap{top:37%!important;width:min(850px,85vw)!important}.landing-stage{min-height:850px!important}.landing-copy{animation:landingCopyCentered .75s .2s ease forwards!important}.landing-copy h1{font-size:clamp(46px,4vw,67px)!important}.landing-stage.opened .landing-copy{opacity:.36;transition:opacity 1.5s}.landing-replay{bottom:-45px!important;right:25%!important}}
+@media(max-width:760px){.landing-fridge-wrap{width:100%!important;margin:240px auto 90px!important;min-height:0!important}.landing-fridge.fridge-model{width:56vw!important}.landing-copy{top:13%!important}.landing-copy h1{font-size:42px!important}.landing-copy>p:last-child{display:none}.landing-stage{min-height:850px!important}.landing-replay{bottom:-55px!important;right:12%!important}}
+@media(prefers-reduced-motion:reduce){.landing-fridge.fridge-model{animation:none!important}.model-door{transition:none!important}}

@@ -1,0 +1,23 @@
+/* Keep image geometry independent of each browser's default button padding. */
+.community-toolbar .community-feed-title{margin:0;font-family:inherit;font-size:20px;font-weight:800;line-height:1.3;letter-spacing:-.3px;color:#5a2e16}
+#dishgrid .dish{padding:0;min-width:0;display:flex;flex-direction:column;align-items:stretch;isolation:isolate;overflow:hidden;border-radius:18px;appearance:none}
+#dishgrid .dish .img{flex:none;width:100%;height:auto;aspect-ratio:16/10;overflow:hidden;border-radius:17px 17px 0 0}
+#dishgrid .dish .img>img{position:absolute;inset:0;width:100%;height:100%;max-width:100%;object-fit:cover;display:block}
+#dishgrid .dish .meta{position:relative;background:#fff;flex:1;box-sizing:border-box;width:100%;padding:14px 16px 16px}
+#screen-dish .heroimg{height:clamp(240px,32vw,460px);overflow:hidden}
+#screen-dish .heroimg #hero-img{display:block!important;width:100%;height:100%;object-fit:cover;object-position:center 55%}
+#screen-dish>.topbar>button{position:relative;background:#fffaf2;border:1px solid #edcda4;color:#8b4a2c;transition:transform .3s cubic-bezier(.2,.8,.25,1.5),background .2s,box-shadow .25s;transform-origin:center}
+#screen-dish>.topbar>button:hover{transform:translateX(-4px);background:#fff0dc;box-shadow:4px 6px 0 #efdac0}
+#screen-dish>.topbar>button:active{transform:translateX(-2px) scale(.94);box-shadow:1px 2px 0 #efdac0}
+#screen-dish>.topbar>button:focus-visible,.favbtn:focus-visible{outline:3px solid #ec9b59;outline-offset:4px}
+.dish .favbtn{transition:background .2s,box-shadow .2s,transform .2s!important;touch-action:manipulation}
+.dish .favbtn:hover{background:#fff4e2;box-shadow:0 3px 12px #8b4a2c33;transform:scale(1.06)}
+.dish .favbtn:active{transform:scale(.97)}
+.dish .favbtn.on{color:#df542d;background:#fff5e7}
+.favourite-glyph{display:block;transform-origin:center;will-change:transform}
+#visitor-modal .visitor-card{position:relative;padding-top:46px!important}
+#visitor-modal .modal-close{position:absolute;top:14px;right:14px;width:34px;height:34px;padding:0;display:grid;place-items:center;border:1px solid #ebc99e;border-radius:50%;background:#fff6e8;color:#8b4529;font-size:24px;line-height:1;cursor:pointer;z-index:3;transition:transform .3s cubic-bezier(.2,.8,.25,1.5),background .2s,box-shadow .2s}
+#visitor-modal .modal-close:hover{transform:rotate(90deg) scale(1.1);background:#f9e5c6;box-shadow:0 4px 10px #8b4a2c24}
+#visitor-modal .modal-close:active{transform:rotate(90deg) scale(.88)}
+#visitor-modal .modal-close:focus-visible{outline:3px solid #ec9b59;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){#screen-dish>.topbar>button,.dish .favbtn,#visitor-modal .modal-close{transition:none!important;transform:none!important}}

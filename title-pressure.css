@@ -1,0 +1,9 @@
+#landing-menu nav button:hover,#landing-menu nav button:focus-visible,#landing-menu nav button.active{color:#fff8ed}
+#landing-menu nav button:hover i,#landing-menu nav button:focus-visible i,#landing-menu nav button.active i{color:#fff0d9}
+.landing-menu nav button{transition:color .24s,transform .3s}
+.landing-copy h1.pressure-title{pointer-events:auto;cursor:default}
+.pressure-title .pressure-line{display:block;white-space:nowrap}
+.pressure-title .pressure-letter{display:inline-block;white-space:pre;transform-origin:50% 70%;will-change:transform}
+.pressure-title .pressure-orange{color:var(--landing-orange)}
+.landing-login-modal{z-index:110}
+@media(prefers-reduced-motion:reduce){.pressure-title .pressure-letter{transform:none!important;will-change:auto}}

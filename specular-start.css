@@ -1,0 +1,21 @@
+.fridge-food-action,.dish-start button{
+ --sb-angle:225deg;--sb-x:30%;--sb-y:15%;--sb-level:.35;
+ position:relative;isolation:isolate;overflow:visible;border:1px solid #cd783f!important;border-radius:18px!important;
+ background:linear-gradient(135deg,#c94f2deb,#ed873bd9)!important;color:#fff8eb!important;
+ box-shadow:inset 0 1px 0 #fff3d766,inset 0 -1px 0 #a43f2033,0 10px 24px -14px #883a26b3!important;
+ backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-weight:800;letter-spacing:.01em;
+ transition:box-shadow .25s ease,scale .25s cubic-bezier(.2,.8,.2,1),filter .25s ease!important;
+}
+.fridge-food-action{position:absolute;min-width:190px;min-height:56px;padding:18px 32px!important;font-family:inherit;font-size:16px}
+.fridge-food-action::before,.dish-start button::before{
+ content:''!important;position:absolute!important;inset:-1px!important;width:auto!important;border-radius:inherit;padding:1.5px;
+ background:conic-gradient(from var(--sb-angle),transparent 0deg,#ffefba 12deg,white 22deg,#ffd080 36deg,transparent 64deg,transparent 174deg,#ffe2a588 199deg,transparent 235deg);
+ -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;
+ opacity:var(--sb-level);pointer-events:none;transform:none!important;transition:opacity .22s ease!important;z-index:2;
+}
+.fridge-food-action::after,.dish-start button::after{content:'';position:absolute;inset:-9px;border-radius:24px;background:radial-gradient(ellipse at var(--sb-x) var(--sb-y),#ffcf7970,transparent 65%);filter:blur(9px);opacity:var(--sb-level);pointer-events:none;z-index:-1;transition:opacity .22s ease}
+.fridge-food-action:hover,.dish-start button:hover{filter:brightness(1.06);box-shadow:inset 0 1px 0 #fff5d999,0 10px 26px -10px #ca683b77!important}
+.fridge-food-action:active,.dish-start button:active{scale:.97;filter:brightness(1.12)}
+.fridge-food-action:focus-visible,.dish-start button:focus-visible{outline:2px solid #dc7839;outline-offset:5px}
+.fridge-food-action:disabled,.dish-start button:disabled{opacity:.5;cursor:default}
+@media(prefers-reduced-motion:reduce){.fridge-food-action,.dish-start button{transition:none!important}}

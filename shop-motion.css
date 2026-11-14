@@ -1,0 +1,26 @@
+.modes button{position:relative;overflow:hidden;transition:transform .23s cubic-bezier(.2,.8,.2,1),box-shadow .23s,border-color .23s,background .23s}
+#screen-dish>.topbar{padding-top:20px;padding-bottom:22px;margin-bottom:12px;row-gap:12px;align-items:center;flex-wrap:wrap}
+@media(max-width:560px){#screen-dish>.topbar{padding-top:16px;padding-bottom:18px;margin-bottom:10px}}
+.modes button:hover{transform:translateY(-4px);border-color:#dfad69;box-shadow:0 12px 25px #8c4e2021}
+.modes button:active{transform:scale(.98)}
+.modes button .mi{display:inline-block;transition:transform .3s cubic-bezier(.2,1.6,.3,1)}
+.modes button:hover .mi{transform:translateY(-3px) rotate(-7deg) scale(1.12)}
+.modes button .mt{color:#603a25;transition:color .2s}
+.modes button:hover .mt{color:#d9542f}
+.actions button{position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s,filter .2s}
+.actions button:hover{transform:translateY(-3px);box-shadow:0 10px 19px #96532b29;filter:brightness(1.04)}
+.actions button:active{transform:scale(.975)}
+.actions .navigate{background:linear-gradient(135deg,#c65430,#eb8537);color:#fff9ed}
+.modes button:focus-visible,.actions button:focus-visible{outline:3px solid #e6ac5a;outline-offset:4px}
+.shop-tap-wave{position:absolute;pointer-events:none;width:20px;height:20px;margin:-10px;border-radius:50%;background:#efb65c66;animation:shopTap .6s ease-out forwards}
+@keyframes shopTap{to{transform:scale(28);opacity:0}}
+.tabs.recipe-gooey{position:relative;isolation:isolate;overflow:visible;background:#eee6d7;border:1px solid #ead4b5;border-radius:23px;padding:8px;gap:6px;box-shadow:inset 0 1px 0 #fff9ed}
+.tabs.recipe-gooey>button{position:relative;z-index:2;flex:1;min-width:0;border-radius:18px;background:transparent!important;box-shadow:none!important;color:#8a6a50;transition:color .2s,transform .18s;font-weight:800}
+.tabs.recipe-gooey>button:hover{color:#a84d2e;transform:translateY(-1px);background:#fff6e733!important}
+.tabs.recipe-gooey>button.on{color:#b84c2a}
+.tabs.recipe-gooey>button:focus-visible{outline:2px solid #cf7840;outline-offset:2px}
+.recipe-goo-layer{position:absolute;inset:0;z-index:0;pointer-events:none;filter:url(#recipe-liquid-filter)}
+.recipe-goo-pill,.recipe-goo-drop{position:absolute;background:#fffbf2;border-radius:18px;box-shadow:inset 0 1px 0 #fff}
+.recipe-goo-pill{left:0;top:0;transition:transform .6s cubic-bezier(.22,.85,.2,1),width .6s cubic-bezier(.22,.85,.2,1),height .3s}
+.recipe-goo-drop{border-radius:50%}
+@media(prefers-reduced-motion:reduce){.modes button,.modes button .mi,.actions button,.recipe-goo-pill,.tabs.recipe-gooey>button{transition:none!important}.shop-tap-wave,.recipe-goo-drop{display:none!important}}

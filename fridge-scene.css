@@ -1,0 +1,6 @@
+.landing-fridge.webgl-fridge{width:100%!important;aspect-ratio:auto!important;height:min(64vh,620px)!important;min-height:430px;animation:none!important;transform:none!important;perspective:none!important;position:relative;background:transparent!important}
+.landing-fridge.webgl-fridge{opacity:1!important}.webgl-fridge canvas{display:block;width:100%;height:100%;touch-action:pan-y}
+.landing-fridge-wrap{top:29%!important;width:min(1050px,92vw)!important;min-height:0!important;perspective:none!important}
+.fridge-food-action{position:absolute;bottom:1%;left:50%;transform:translateX(-50%);border:1px solid #f4bd6b;border-radius:999px;background:linear-gradient(120deg,#d9542f,#ef8a39);color:#fff9ed;padding:13px 25px;font:800 14px/1.2 inherit;box-shadow:0 8px 20px #8a432c33;cursor:pointer}.fridge-food-action[hidden]{display:none}
+.landing-replay{bottom:-12px!important;right:15%!important}
+@media(max-width:760px){.landing-fridge-wrap{width:110vw!important;margin:180px -5vw 100px!important;top:auto!important;left:auto!important;transform:none!important}.landing-fridge.webgl-fridge{height:520px!important}}

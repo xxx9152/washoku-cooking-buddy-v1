@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mochi motion review</title>
+  <style>
+    :root{--cream:#fff7e8;--paper:#fffdf9;--ink:#56321e;--muted:#8c6549;--line:#edcf9a;--orange:#e95b2b;--gold:#ffc968}
+    *{box-sizing:border-box} body{margin:0;background:var(--cream);font-family:ui-rounded,"Avenir Next",Avenir,system-ui,sans-serif;color:var(--ink)}
+    main{max-width:1320px;margin:auto;padding:48px 28px 64px}.eyebrow{color:#a05d32;font-size:.8rem;letter-spacing:.14em;font-weight:900;text-transform:uppercase;margin:0 0 10px}
+    h1{font-size:clamp(2rem,4vw,3.7rem);line-height:1.04;margin:0 0 14px}.lead{font-size:1.12rem;line-height:1.55;max-width:780px;color:var(--muted);margin:0 0 32px}
+    .note{background:linear-gradient(115deg,#fff4d7,#ffe4ae);border:1px solid var(--line);border-radius:22px;padding:18px 20px;font-weight:800;color:#744523;margin-bottom:28px}
+    .grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 12px 25px rgba(108,61,25,.08)}
+    .scene{background:#e0a25f;aspect-ratio:3/4;overflow:hidden}.scene img{display:block;width:100%;height:100%;object-fit:cover}.copy{padding:18px 18px 20px}.number{display:inline-grid;place-items:center;width:29px;height:29px;border-radius:9px;background:#ffedca;color:var(--orange);font-weight:950;margin-right:8px}h2{font-size:1.28rem;line-height:1.15;margin:0 0 10px;display:flex;align-items:center}p{margin:0;color:var(--muted);font-size:.98rem;line-height:1.48}.action{font-weight:800;color:#70432a;margin-top:12px}
+    @media(max-width:1050px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.scene{aspect-ratio:16/10}}@media(max-width:620px){main{padding:32px 16px}.grid{grid-template-columns:1fr}.scene{aspect-ratio:3/4}}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Mochi action review · V2</p>
+    <h1>One cooking action at a time.</h1>
+    <p class="lead">These are real, generated multi-frame loops—not a single image being shaken. The action order follows the Omurice recipe from preparation through serving.</p>
+    <div class="note">No Miso layer is used here, so there is no double exposure or overlapping paws, pans, or food.</div>
+    <section class="grid" aria-label="Mochi cooking sequence">
+      <article class="card"><div class="scene"><img src="mochi-action-step-1.gif" alt="Mochi slices scallions" /></div><div class="copy"><h2><span class="number">1</span>Prep &amp; cut</h2><p>Lift the knife, slice the scallion, separate the rings, then move forward.</p><p class="action">Cut ingredients first.</p></div></article>
+      <article class="card"><div class="scene"><img src="mochi-action-step-2.gif" alt="Mochi fries chicken rice" /></div><div class="copy"><h2><span class="number">2</span>Fry chicken-rice</h2><p>Scoop, turn, mix in ketchup, then cook until the rice is evenly pink.</p><p class="action">Build the rice base.</p></div></article>
+      <article class="card"><div class="scene"><img src="mochi-action-step-3.gif" alt="Mochi swirls a soft omelette" /></div><div class="copy"><h2><span class="number">3</span>Make soft egg</h2><p>Pour, swirl the pan, gently draw in the setting edge, and keep the top glossy.</p><p class="action">Do not fold yet.</p></div></article>
+      <article class="card"><div class="scene"><img src="mochi-action-step-4.gif" alt="Mochi folds omelette and plates it" /></div><div class="copy"><h2><span class="number">4</span>Fold &amp; plate</h2><p>Set rice to one side, fold the egg, tip the pan, and release it seam-side down.</p><p class="action">Move it onto the plate.</p></div></article>
+      <article class="card"><div class="scene"><img src="mochi-action-step-5.gif" alt="Mochi adds ketchup to omurice" /></div><div class="copy"><h2><span class="number">5</span>Sauce &amp; serve</h2><p>Start the ketchup line, draw a clean zigzag, then finish the plate.</p><p class="action">Final garnish.</p></div></article>
+    </section>
+  </main>
+</body>
+</html>

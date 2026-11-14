@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mochi motion review</title>
+  <style>
+    :root{--cream:#fff7e9;--paper:#fffdf9;--ink:#5b3420;--orange:#df5b30;--gold:#f1b354}
+    *{box-sizing:border-box} body{margin:0;background:var(--cream);font-family:ui-rounded,"Avenir Next",system-ui,sans-serif;color:var(--ink)}
+    main{max-width:1100px;margin:auto;padding:36px 20px 64px}h1{margin:0;font-size:clamp(28px,5vw,44px)}p{font-size:16px;line-height:1.6;color:#805d43}.lead{max-width:720px;margin:10px 0 28px}
+    .note{border:1px solid #efd2a6;background:#fff4dc;border-radius:18px;padding:13px 16px;font-size:14px;font-weight:750;margin-bottom:22px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}.card{overflow:hidden;border:1px solid #edd5b0;border-radius:23px;background:var(--paper);box-shadow:0 9px 24px rgba(94,48,21,.08)}.scene{height:260px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 18%,#f6cf87,#bd7640 86%)}.scene:after{content:"";position:absolute;inset:auto 0 0;height:30%;background:linear-gradient(transparent,rgba(73,37,17,.18));pointer-events:none}.motion{position:absolute;inset:0;display:grid;place-items:center;transform-origin:center bottom}.motion img{width:118%;height:118%;object-fit:contain;filter:drop-shadow(0 12px 11px rgba(65,34,17,.16));user-select:none;pointer-events:none}.copy{padding:15px 17px 18px}.step{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:9px;background:#fbe6c4;color:var(--orange);font-size:13px;font-weight:900;margin-right:8px}.copy h2{font-size:19px;margin:0 0 7px}.copy p{font-size:13px;margin:0}
+    .chop{animation:chop 1.35s cubic-bezier(.37,0,.2,1) infinite}.stir{animation:stir 2.1s cubic-bezier(.45,0,.2,1) infinite}.fold{animation:fold 2s cubic-bezier(.38,0,.2,1) infinite}.plate{animation:plate 2.4s cubic-bezier(.4,0,.2,1) infinite}.finish{animation:finish 1.8s cubic-bezier(.42,0,.22,1) infinite}@keyframes chop{0%,100%{transform:translate(4%,-8%) rotate(-2deg)}26%{transform:translate(0,4%) rotate(1deg)}47%{transform:translate(5%,-9%) rotate(-2deg)}71%{transform:translate(-1%,5%) rotate(2deg)}}@keyframes stir{0%,100%{transform:rotate(0) translateY(1%)}25%{transform:rotate(3deg) translate(2%,-2%)}52%{transform:rotate(-4deg) translate(-2%,1%)}76%{transform:rotate(3deg) translate(1%,-2%)}}@keyframes fold{0%,100%{transform:translate(0,4%) rotate(0)}33%{transform:translate(2%,-4%) rotate(2deg)}62%{transform:translate(-3%,2%) rotate(-3deg)}}@keyframes plate{0%,100%{transform:translate(2%,6%) rotate(1deg)}38%{transform:translate(-4%,-4%) rotate(-3deg)}70%{transform:translate(4%,0) rotate(3deg)}}@keyframes finish{0%,100%{transform:translate(0,3%) rotate(0)}25%{transform:translate(-3%,-4%) rotate(-3deg)}50%{transform:translate(3%,1%) rotate(3deg)}75%{transform:translate(-3%,-4%) rotate(-3deg)}}@media(prefers-reduced-motion:reduce){.motion{animation:none!important}}
+  </style>
+</head>
+<body><main>
+  <h1>🦫 Mochi motion review</h1>
+  <p class="lead">A clean, single-scene test for all five cooking steps. The old Miso GIF layer is not used here, so there is no doubled kitchen, food, pan, or paw.</p>
+  <div class="note">Please check two things: the paw texture and whether each action reads clearly before I put this version into the recipe flow.</div>
+  <section class="grid">
+    <article class="card"><div class="scene"><div class="motion chop"><img src="mochi-review-1.png" alt="Mochi slices scallion"></div></div><div class="copy"><h2><span class="step">1</span>Prep everything</h2><p>Steady, lift, and slice in a continuous chopping rhythm.</p></div></article>
+    <article class="card"><div class="scene"><div class="motion stir"><img src="mochi-review-2.png" alt="Mochi stirs egg"></div></div><div class="copy"><h2><span class="step">2</span>Make soft egg</h2><p>Small circular stir motion while the egg gently sets.</p></div></article>
+    <article class="card"><div class="scene"><div class="motion fold"><img src="mochi-review-3.png" alt="Mochi folds omelette"></div></div><div class="copy"><h2><span class="step">3</span>Fold the omelette</h2><p>Lift, fold, and settle the soft egg.</p></div></article>
+    <article class="card"><div class="scene"><div class="motion plate"><img src="mochi-review-4.png" alt="Mochi plates omurice"></div></div><div class="copy"><h2><span class="step">4</span>Fold and plate</h2><p>Guide the omelette from pan to rice.</p></div></article>
+    <article class="card"><div class="scene"><div class="motion finish"><img src="mochi-review-5.png" alt="Mochi finishes omurice"></div></div><div class="copy"><h2><span class="step">5</span>Finish the plate</h2><p>Final garnish / sauce movement.</p></div></article>
+  </section>
+</main></body></html>

@@ -1,0 +1,53 @@
+/* Mochi final motion uses one flattened, self-contained animation per step.
+   Never stack a Miso background and a second paw layer: that caused the flash
+   and double-exposure visible in the cooking view. */
+.buddy-demo.mochi-final-motion{
+  object-position:center 54%;
+  background:#d99650;
+}
+
+/* Consistent warm close control for action sheets. */
+.share-sheet,
+.report-modal-card {
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e7c79e;
+  border-radius: 50%;
+  background: #fff8ec;
+  color: #8b4427;
+  font: 800 23px/1 inherit;
+  cursor: pointer;
+  transition: transform .18s ease, background .18s ease, color .18s ease, box-shadow .18s ease;
+}
+
+.modal-close:hover {
+  background: linear-gradient(135deg, #d9542f, #f28b36);
+  border-color: #d9542f;
+  color: #fff;
+  box-shadow: 0 7px 15px rgba(151,61,29,.2);
+  transform: translateY(-2px) rotate(90deg);
+}
+
+.modal-close:active {
+  transform: scale(.93) rotate(90deg);
+  box-shadow: none;
+}
+
+.modal-close:focus-visible {
+  outline: 3px solid rgba(239,131,55,.45);
+  outline-offset: 2px;
+}
+
+.share-sheet > h2,
+.report-modal-card > h2 {
+  padding-right: 42px;
+}
